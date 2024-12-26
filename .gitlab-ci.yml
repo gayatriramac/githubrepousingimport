@@ -38,6 +38,13 @@ test2:
     - echo "Do another parallel test here"
     - echo "For example run a lint test"
 
+test3:
+  stage: test
+  script:
+    - echo "Do another parallel test here"
+    - echo "For example run a lint test" !reference"
+
+
 deploy1:
   stage: deploy
   script:
